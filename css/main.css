@@ -109,6 +109,65 @@ header {
   padding-bottom: 2rem;
 }
 
+#MemberSection {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#headlineMember {
+  letter-spacing: 1.2rem;
+}
+
+.membersParallax {
+  background-image: url('../img/members.jpg'); /* fallback for older browsers */
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url('../img/members.jpg');
+}
+
+#maxName {
+  position: relative;
+  margin-left: 65vw;
+  top: 10vh;
+  width: 5rem;
+  padding: 0 1rem 0 1rem;
+  background-color: black;
+}
+
+#daniName {
+  position: relative;
+  margin-left: 75vw;
+  top: 10vh;
+  width: 5rem;
+  padding: 0 1rem 0 1rem;
+  background-color: black;
+}
+
+#matzeName {
+  position: relative;
+  margin-left: 45vw;
+  top: 10vh;
+  width: 5rem;
+  padding: 0 1rem 0 1rem;
+  background-color: black;
+}
+
+#simonName {
+  position: relative;
+  margin-left: 25vw;
+  top: 10vh;
+  width: 5rem;
+  padding: 0 1rem 0 1rem;
+  background-color: black;
+}
+
+#videos {
+  height: 20vh;
+}
+
 @media screen and (max-width: 527px) {
   #staticTryHeadline {
     font-size: 3rem;
@@ -117,7 +176,7 @@ header {
   }
 
   #introSection {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 3rem 0;
   }
 
   #headlineEP {
@@ -142,6 +201,29 @@ header {
 
   .parallax {
     background-attachment: inherit;
+  }
+
+  .membersParallax {
+    background-image: url('../img/members_mobil.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url('../img/members_mobil.jpg');
+    height: 50vh;
+    background-attachment: inherit;
+  }
+
+  #maxName {
+    display: none;
+  }
+
+  #daniName {
+    display: none;
+  }
+
+  #matzeName {
+    display: none;
+  }
+
+  #simonName {
+    display: none;
   }
 
   .topnav a {display: none;}
