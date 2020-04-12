@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="eng">
 
 <head>
   <meta charset="utf-8">
@@ -10,10 +10,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+
   <script src="https://kit.fontawesome.com/fc4a4fbb1d.js" crossorigin="anonymous"></script>
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css" />
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -71,21 +73,71 @@
       <div class="row">
         <div class="col-12">
           <h2 id="headlineMember">
-            Members <br/>
+            Members
           </h2>
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="col-12 membersParallax">
-      <div id="maxName">Max</div>
-      <div id="daniName">Dani</div>
-      <div id="matzeName">Matze</div>
-      <div id="simonName">Simon</div>
+    <div class="container-fluid">
+      <div class="col-12 membersParallax">
+        <div id="maxName">Max</div>
+        <div id="daniName">Dani</div>
+        <div id="matzeName">Matze</div>
+        <div id="simonName">Simon</div>
+      </div>
     </div>
   </section>
   <section id="videos">
+    <div class="container">
+      <h2 id="headlineVideos">
+        Videos
+      </h2>
+      <div class="row">
+        <div class="col-12 col-md-6 centerVideo">
+          <iframe width="420" height="315"
+                  src="https://www.youtube.com/embed/X0o8HzC880o" allowfullscreen>
+          </iframe>
+          <p class="videoDescription">Missing Parts [JS Tour 2019 Part 1]</p>
+        </div>
+        <div class="col-12 col-md-6 centerVideo">
+          <iframe width="420" height="315"
+                  src="https://www.youtube.com/embed/7WErOR20VcY" allowfullscreen>
+          </iframe>
+          <p class="videoDescription">Written Therapy [JS Tour 2019 Part 2]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="images">
+    <h2 id="headlinePhotos">
+      Photo Gallery
+    </h2>
+    <div class="slider">
+      <div>
+        <img src="./img/fountain.jpg" alt="Static Try on Fountain">
+      </div>
+      <div>
+        <img src="./img/wendlandLive.jpg" alt="Wendland Gig">
+      </div>
+      <div>
+        <img src="./img/staticTryFamily.jpg" alt="Static Try Family">
+      </div>
+      <div>
+        <img src="./img/studio1.JPG" alt="At the Studio">
+      </div>
+      <div>
+        <img src="./img/maxSmile.jpg" alt="Max smiling">
+      </div>
+      <div>
+        <img src="./img/landscape.jpg" alt="Group photo of Static Try">
+      </div>
+    </div>
+    <div class="controls">
+      <a class="control prev"><i class="fas fa-chevron-left"></i></a>
+      <a class="control next"><i class="fas fa-chevron-right"></i></a>
+    </div>
 
   </section>
 
@@ -95,6 +147,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

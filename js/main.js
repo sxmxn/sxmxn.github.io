@@ -6,3 +6,15 @@ function navBarOpen() {
     x.className = "topnav";
   }
 }
+
+// Slideshow
+
+const slider = tns({
+  container: '.slider',
+  prevButton: '.prev',
+  nextButton: '.next',
+  autoWidth: true,
+  center: true,
+  gutter: 30,
+  navPosition: 'bottom',
+});
