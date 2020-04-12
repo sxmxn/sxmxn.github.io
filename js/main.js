@@ -10,11 +10,9 @@ function navBarOpen() {
 // Slideshow
 
 const slider = tns({
+  fixedWidth: '70',
   container: '.slider',
   prevButton: '.prev',
   nextButton: '.next',
-  autoWidth: true,
-  center: true,
-  gutter: 30,
   navPosition: 'bottom',
 });
