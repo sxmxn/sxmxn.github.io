@@ -130,6 +130,10 @@ footer a {
   padding: 6rem 0 6rem 0;
 }
 
+.rapText {
+  text-align: justify;
+}
+
 #scrollContent {
   position: relative;
   top: 60vh;
@@ -354,7 +358,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 970px) {
 
   #scrollContent {
     display: none;
@@ -398,7 +402,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 970px) {
   .topnav {
     position: fixed;
     right: 1rem;
