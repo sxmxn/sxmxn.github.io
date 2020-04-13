@@ -16,3 +16,10 @@ const slider = tns({
   nextButton: '.next',
   navPosition: 'bottom',
 });
+
+// Image zoom
+mediumZoom('.zoom', {
+  margin: 20,
+  background: 'rgba(20, 20, 20, 0.8)',
+  container: '#images'
+});
