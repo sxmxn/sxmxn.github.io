@@ -43,6 +43,33 @@ footer a {
   font-size: 3rem;
 }
 
+#linkToContent {
+  text-decoration: none;
+  color: #D8DBE2;
+}
+
+#scrollContent {
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
 #linkHeadline {
   color: white;
   text-decoration: none;
