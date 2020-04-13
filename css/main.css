@@ -71,8 +71,18 @@ header {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url('../img/cover.jpg');
 }
 
+.parallaxLive {
+  background-image: url('../img/wendlandLive.jpg'); /* fallback for older browsers */
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url('../img/wendlandLive.jpg');
+}
+
 #introSection {
-  padding: 10rem 0 10rem 0;
+  padding: 6rem 0 6rem 0;
 }
 
 #scrollContent {
@@ -90,6 +100,20 @@ header {
   top: 20rem;
   margin: 0;
   letter-spacing: 2rem;
+}
+
+#LiveHeadline {
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+  top: 15rem;
+  margin: 0;
+  letter-spacing: 2rem;
+}
+
+#live {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
 }
 
 .headlineEPCol {
@@ -165,7 +189,7 @@ header {
 }
 
 #videos {
- padding: 5rem 0 5rem 0;
+ padding: 6rem 0 6rem 0;
 }
 
 #headlineVideos{
@@ -227,13 +251,28 @@ header {
   background-color:rgba(20,20,20,0.8);
   padding:0.5rem}
 
+#headlineLive {
+  padding-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1.2rem;
+}
+
 @media screen and (max-width: 527px) {
+  #MemberSection {
+    padding: 2rem 0 0 0;
+  }
   iframe {
     width: 100%;
   }
   #staticTryHeadline {
     font-size: 3rem;
     top: 6rem;
+    letter-spacing: 1rem;
+  }
+
+  #LiveHeadline {
+    font-size: 3rem;
+    top: 12rem;
     letter-spacing: 1rem;
   }
 
@@ -247,6 +286,12 @@ header {
   }
 
   .parallax {
+    height: 60vh;
+    background-attachment: inherit;
+    background-size: contain;
+  }
+
+  .parallaxLive {
     height: 60vh;
     background-attachment: inherit;
     background-size: contain;
@@ -275,7 +320,7 @@ header {
 
   .membersParallax {
     background-image: url('../img/members_mobil.jpg');
-    background-image: linear-gradient(to bottom, rgba(27,27,30,0.2) 0%,rgba(27,27,30,0.2) 100%), url('../img/members_mobil.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 100%), url('../img/members_mobil.jpg');
     height: 50vh;
     background-attachment: inherit;
   }
@@ -321,7 +366,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(27, 27, 30, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
     bottom: 0;
     z-index: 2;
@@ -344,6 +389,12 @@ header {
   #staticTryHeadline {
     font-size: 3rem;
     top: 4rem;
+    letter-spacing: 1rem;
+  }
+
+  #LiveHeadline {
+    font-size: 3rem;
+    top: 3rem;
     letter-spacing: 1rem;
   }
 }
